@@ -1,0 +1,36 @@
+site_name: Order Management System — Docs
+site_description: Документація проекту управління замовленнями
+site_author: Team
+
+docs_dir: .
+
+theme:
+  name: material
+  language: uk
+  palette:
+    primary: blue
+    accent: light blue
+  features:
+    - navigation.tabs
+    - navigation.top
+    - search.highlight
+
+nav:
+  - Головна: README.md
+  - Архітектура:
+    - SSD: architecture/SSD.md
+    - SDD: architecture/SDD.md
+    - ISD: architecture/ISD.md
+  - Якість:
+    - Test Strategy: quality/test-strategy.md
+    - Traceability Matrix: quality/traceability-matrix.md
+  - Розробникам:
+    - Онбординг: developer/onboarding.md
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - admonition
+  - codehilite
